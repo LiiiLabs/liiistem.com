@@ -1,0 +1,113 @@
+<TMU|<tuple|1.1.0|2025.1.1-rc2>>
+
+<style|<tuple|generic|chinese|number-europe>>
+
+<\body>
+  <doc-data|<doc-title|20250816题目>|<doc-author|<author-data|<author-name|猴哥考研竞赛数学>|<author-homepage|<hlink|bilibili|https://space.bilibili.com/33047006>>>>|<doc-author|<author-data|<author-name|Liii Network>|<author-homepage|<hlink|https://liiistem.cn|https://liiistem.cn>>>>>
+
+  <section*|需知>
+
+  <\itemize>
+    <item>题目由三鲤网络和猴哥考研竞赛数学提供
+
+    <item>专属QQ答疑群: 1057579715
+
+    <item>购买Liii STEM<hlink|果实会员|https://liiistem.cn/pricing-fruit.html>可获取全部习题答案，定期（每两周）更新，并有专属答疑群和使用<hlink|Liii STEM内置AI工具答疑|https://liiistem.cn/docs/guide-tuto-llm-plug.html>。
+  </itemize>
+
+  <\question>
+    (202412151431) 设 <math|f:<around|(|a,b|)>\<to\>\<bbb-R\>>. 我们知道对于每一个 <math|c\<in\><around|(|a,b|)>>，可以将 <math|f<around|(|t|)>> 表示为:
+
+    <\equation*>
+      f<around|(|t|)>=<big|sum><rsub|i=0><rsup|k>a<rsub|i>*<around|(|t-c|)><rsup|i>+o<around|(|<around|(|t-c|)><rsup|k>|)>
+    </equation*>
+
+    并且对于所有的 <math|i>，<math|a<rsub|i><around|(|c|)>> 关于 <math|c> 是连续的。我们能否得出 <math|f> 是 <math|C<rsup|k>> 类的?
+  </question>
+
+  <\question>
+    (202412131120) 设 <math|x,y\<gtr\>0>
+
+    <\equation*>
+      x<rsup|n>+y<rsup|n>\<leq\><around*|(|<frac|x<rsup|n>+y<rsup|n>|x<rsup|n-1>+y<rsup|n-1>>|)><rsup|n>+<around*|(|<frac|x<rsup|n>+y<rsup|n>|2>|)><rsup|n>.
+    </equation*>
+  </question>
+
+  <\question>
+    (202515411) 设 <math|a,b\<in\>\<bbb-R\>,p\<geq\>2>，证明：
+
+    <\equation*>
+      <around*|\||<frac|a+b|2>|\|><rsup|p>+<around*|\||<frac|a-b|2>|\|><rsup|p>\<leq\><frac|<around|\||a|\|><rsup|p>+<around|\||b|\|><rsup|p>|2>
+    </equation*>
+  </question>
+
+  <\question>
+    (2025112811) 展示一个连续函数序列 <math|f<rsub|n>:<around|[|0,1|]>\<to\><around|[|0,1|]>>，它逐点单调递减地收敛到一个函数 <math|f:<around|[|0,1|]>\<to\><around|[|0,1|]>>，并且使得 <math|f> 的不连续点集合的测度为 1。
+  </question>
+
+  <\question>
+    (202412151441) 证明：可以构造一个连续函数 <math|f:<around|[|0,1|]>\<to\>\<bbb-R\>>，使得对于每一个 <math|x\<in\>\<bbb-R\>>，<math|f<rsup|-1><around|(|x|)>> 要么为空，要么具有基数 <math|\<aleph\><rsub|0>>（即可数无限）.
+  </question>
+
+  <\question>
+    (20251211353) 对于函数 <math|f<around|(|x|)>=sin x+sin <around|(|x*<sqrt|2>|)>+sin <around|(|x*<sqrt|3>|)>>，连续实零点之间的平均距离是多少？更具体地说，如果 <math|z<around|(|x|)>> 定义为满足 <math|<around*|\||\<zeta\>|\|>\<less\>x> 的零点的数量，那么下述极限的值是什么？
+
+    <\equation*>
+      lim<rsub|x\<to\>+\<infty\>> <frac|2*x|z<around|(|x|)>>
+    </equation*>
+  </question>
+
+  <\question>
+    (20246252011) 已知严格单调的连续函数 <math|f:\<bbb-R\>\<to\>\<bbb-R\>>，求极限
+
+    <\equation*>
+      lim<rsub|t\<to\>0<rsup|+>> <frac|1|t>*<big|int><rsub|0><rsup|t>f*<around|(|x+t|)>-f<around|(|x|)>*d*x*<space|1em><text|与><space|1em>lim<rsub|t\<to\>0<rsup|+>> <frac|1|t>*<big|int><rsub|0><rsup|t>f<around|(|x|)>*<around|(|f*<around|(|x+t|)>-f<around|(|x|)>|)>*d*x.
+    </equation*>
+  </question>
+
+  <\question>
+    (20251211383) 证明：
+
+    <\equation*>
+      <around*|\||x*sin <frac|1|x>-y*sin <frac|1|y>|\|>\<leq\>2*<sqrt|<around|\||x-y|\|>>.
+    </equation*>
+  </question>
+
+  <\question>
+    （均匀连续）如果一个函数 <math|f:<around|[|0,+\<infty\>|)>\<to\>\<bbb-R\>> 是一致连续的，则满足以下陈述
+
+    <\equation*>
+      \<forall\>\<varepsilon\>\<gtr\>0,\<exists\>M<rsub|\<varepsilon\>>\<gtr\>0,\<exists\>r<rsub|\<varepsilon\>>\<gtr\>0,\<forall\>h\<in\><around|[|0,r<rsub|\<varepsilon\>>|]>,<around|\||f*<around|(|x+h|)>-f<around|(|x|)>|\|>\<less\>\<varepsilon\>.
+    </equation*>
+  </question>
+
+  <\question>
+    (2024627838) 如果实函数 <math|f\<in\>C<around|(|<around|[|0,+\<infty\>|)>|)>> 并且 <math|\<forall\>h\<in\>\<bbb-R\>> 都有
+
+    <\equation*>
+      lim<rsub|x\<to\>+\<infty\>><around|\||f*<around|(|x+h|)>-f<around|(|x|)>|\|>=0
+    </equation*>
+
+    试问 <math|f> 在 <math|<around|[|0,+\<infty\>|)>> 上是否一致连续。
+  </question>
+</body>
+
+<\initial>
+  <\collection>
+    <associate|page-screen-margin|false>
+  </collection>
+</initial>
+
+<\references>
+  <\collection>
+    <associate|auto-1|<tuple|?|?>>
+  </collection>
+</references>
+
+<\auxiliary>
+  <\collection>
+    <\associate|toc>
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|需知> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-1><vspace|0.5fn>
+    </associate>
+  </collection>
+</auxiliary>

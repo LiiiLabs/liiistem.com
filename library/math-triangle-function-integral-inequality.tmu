@@ -1,0 +1,170 @@
+<TMU|<tuple|1.1.0|2025.0.11>>
+
+<style|<tuple|generic|number-europe|chinese|llm>>
+
+<\body>
+  <\question>
+    证明：
+
+    <\equation*>
+      <big|int><rsub|0><rsup|\<pi\>/2><around*|[|sin<around*|(|cos x|)>+cos<around*|(|sin x|)>|]>\<mathd\>x\<leq\><frac|<sqrt|2>\<pi\>|2>.
+    </equation*>
+  </question>
+
+  <\answer>
+    注意到
+
+    <\equation*>
+      cos<around*|(|<frac|\<pi\>|2>-x|)>=sin x.
+    </equation*>
+
+    因此
+
+    <\equation*>
+      <big|int><rsub|0><rsup|\<pi\>/2>cos<around*|(|cos<around*|(|<frac|\<pi\>|2>-x|)>|)>\<mathd\>x=<big|int><rsub|0><rsup|\<pi\>/2>cos<around*|(|cos<around*|(|u|)>|)>\<mathd\>u.
+    </equation*>
+
+    注意到
+
+    <\equation*>
+      sin x+cos x=<sqrt|2>sin<around*|(|x+<frac|\<pi\>|4>|)>.
+    </equation*>
+
+    因此
+
+    <\align>
+      <tformat|<table|<row|<cell|<big|int><rsub|0><rsup|\<pi\>/2><around*|[|sin<around*|(|cos x|)>+cos<around*|(|sin x|)>|]>\<mathd\>x=>|<cell|<big|int><rsub|0><rsup|\<pi\>/2><around*|[|sin<around*|(|cos x|)>+cos<around*|(|cos<around*|(|x|)>|)>|]>\<mathd\>x>>|<row|<cell|=>|<cell|<sqrt|2><big|int><rsub|0><rsup|\<pi\>/2>sin<around*|(|cos<around*|(|x|)>+<frac|\<pi\>|4>|)>\<mathd\>x>>|<row|<cell|\<leq\>>|<cell|<frac|<sqrt|2>\<pi\>|2>.>>>>
+    </align>
+  </answer>
+
+  <\session|llm|DeepSeek-V3>
+    <\output>
+      LLM session v20250629 by LiiiLabs
+
+      Using deepseek-chat provided by deepseek.com with max_tokens 4096
+
+      Help docs：Help-\<gtr\>Plugins-\<gtr\>LLM
+    </output>
+
+    <\folded-io-text>
+      V3\<gtr\>\ 
+    <|folded-io-text>
+      <\question>
+        证明：
+
+        <\equation*>
+          <big|int><rsub|0><rsup|\<pi\>/2><around*|[|sin<around*|(|cos x|)>+cos<around*|(|sin x|)>|]>\<mathd\>x\<leq\><frac|<sqrt|2>\<pi\>|2>.
+        </equation*>
+      </question>
+    <|folded-io-text>
+      \;
+
+      <subsubsection|更简洁的证明><label|ux66f4ux7b80ux6d01ux7684ux8bc1ux660e>
+
+      实际上，更简洁的方法是直接利用对称性和函数的性质：
+
+      观察到：
+
+      <\equation*>
+        <big|int><rsub|0><rsup|\<pi\>/2>sin <around|(|cos x|)>*<space|0.17em>d*x=<big|int><rsub|0><rsup|\<pi\>/2>sin <around|(|sin t|)>*<space|0.17em>d*t*<space|1em><around|(|<text|令 >t=\<pi\>/2-x|)>,
+      </equation*>
+
+      <\equation*>
+        <big|int><rsub|0><rsup|\<pi\>/2>cos <around|(|sin x|)>*<space|0.17em>d*x=<big|int><rsub|0><rsup|\<pi\>/2>cos <around|(|cos t|)>*<space|0.17em>d*t.
+      </equation*>
+
+      因此：
+
+      <\equation*>
+        I=<big|int><rsub|0><rsup|\<pi\>/2><around|[|sin <around|(|cos x|)>+cos <around|(|sin x|)>|]>*<space|0.17em>d*x=<big|int><rsub|0><rsup|\<pi\>/2><around|[|sin <around|(|sin x|)>+cos <around|(|cos x|)>|]>*<space|0.17em>d*x.
+      </equation*>
+
+      将两式相加：
+
+      <\equation*>
+        2*I=<big|int><rsub|0><rsup|\<pi\>/2><around|[|sin <around|(|cos x|)>+cos <around|(|sin x|)>+sin <around|(|sin x|)>+cos <around|(|cos x|)>|]>*<space|0.17em>d*x\<leq\><big|int><rsub|0><rsup|\<pi\>/2>2*<sqrt|2>*<space|0.17em>d*x=<sqrt|2>*\<pi\>,
+      </equation*>
+
+      <\equation*>
+        \<Rightarrow\>I\<leq\><frac|<sqrt|2>*\<pi\>|2>.
+      </equation*>
+
+      <subsubsection|最终答案><label|ux6700ux7ec8ux7b54ux6848>
+
+      综上所述，我们证明了：
+
+      <\equation*>
+        <big|int><rsub|0><rsup|\<pi\>/2><around|[|sin <around|(|cos x|)>+cos <around|(|sin x|)>|]><math-up|d>x\<leq\><frac|<sqrt|2>*\<pi\>|2>.
+      </equation*>
+
+      这个不等式成立。
+    </folded-io-text>
+
+    <\input-text>
+      V3\<gtr\>\ 
+    <|input-text>
+      \;
+    </input-text>
+  </session>
+</body>
+
+<\initial>
+  <\collection>
+    <associate|page-height|auto>
+    <associate|page-medium|paper>
+    <associate|page-screen-margin|false>
+    <associate|page-type|a4>
+    <associate|page-width|auto>
+  </collection>
+</initial>
+
+<\references>
+  <\collection>
+    <associate|auto-1|<tuple|1|1>>
+    <associate|auto-10|<tuple|6|?>>
+    <associate|auto-11|<tuple|7|?>>
+    <associate|auto-12|<tuple|8|?>>
+    <associate|auto-13|<tuple|9|?>>
+    <associate|auto-14|<tuple|10|?>>
+    <associate|auto-15|<tuple|11|?>>
+    <associate|auto-16|<tuple|12|?>>
+    <associate|auto-17|<tuple|13|?>>
+    <associate|auto-18|<tuple|14|?>>
+    <associate|auto-19|<tuple|15|?>>
+    <associate|auto-2|<tuple|2|?>>
+    <associate|auto-3|<tuple|3|?>>
+    <associate|auto-4|<tuple|4|?>>
+    <associate|auto-5|<tuple|5|?>>
+    <associate|auto-6|<tuple|6|?>>
+    <associate|auto-7|<tuple|7|?>>
+    <associate|auto-8|<tuple|5.1|?>>
+    <associate|auto-9|<tuple|5.2|?>>
+    <associate|ux4e25ux683cux8bc1ux660e|<tuple|2|?>>
+    <associate|ux4f7fux7528ux4e0dux7b49ux5f0f|<tuple|7|?>>
+    <associate|ux4f7fux7528ux5bf9ux79f0ux6027ux548cux79efux5206ux4e0dux7b49ux5f0f|<tuple|3|?>>
+    <associate|ux5206ux6790ux88abux79efux51fdux6570|<tuple|3|?>>
+    <associate|ux521dux6b65ux89c2ux5bdf|<tuple|2|?>>
+    <associate|ux5bf9ux79f0ux6027ux548cux79efux5206ux4ea4ux6362|<tuple|6|?>>
+    <associate|ux5bfbux627eux6700ux5927ux503c|<tuple|4|?>>
+    <associate|ux6570ux503cux89c2ux5bdf|<tuple|4.2|?>>
+    <associate|ux66f4ux597dux7684ux4f30ux8ba1|<tuple|8|?>>
+    <associate|ux66f4ux7b80ux6d01ux7684ux8bc1ux660e|<tuple|1|?>>
+    <associate|ux6700ux7ec8ux7b54ux6848|<tuple|2|1>>
+    <associate|ux6700ux7ec8ux8bc1ux660e|<tuple|4|?>>
+    <associate|ux7b2cux4e00ux4e2aux79efux5206int-sin-cos-x-dx|<tuple|5.1|?>>
+    <associate|ux7b2cux4e8cux4e2aux79efux5206int-cos-sin-x-dx|<tuple|5.2|?>>
+    <associate|ux7cbeux786eux8ba1ux7b97|<tuple|1|?>>
+    <associate|ux7ed3ux8bba|<tuple|5|?>>
+    <associate|ux8ba1ux7b97ux5bfcux6570|<tuple|4.1|?>>
+    <associate|ux91cdux65b0ux601dux8003|<tuple|5|?>>
+    <associate|ux95eeux9898ux9648ux8ff0|<tuple|1|?>>
+  </collection>
+</references>
+
+<\auxiliary>
+  <\collection>
+    <\associate|toc>
+      <with|par-left|<quote|2tab>|1<space|2spc>最终答案 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-1>>
+    </associate>
+  </collection>
+</auxiliary>

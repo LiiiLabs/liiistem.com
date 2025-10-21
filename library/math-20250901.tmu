@@ -1,0 +1,91 @@
+<TMU|<tuple|1.1.0|2025.1.1-rc2>>
+
+<style|<tuple|generic|chinese|number-europe>>
+
+<\body>
+  <doc-data|<doc-title|20250901例题>|<doc-author|<author-data|<author-name|猴哥考研竞赛数学>|<author-homepage|<hlink|bilibili|https://space.bilibili.com/33047006>>>>|<doc-author|<author-data|<author-name|Liii Network>|<author-homepage|<hlink|https://liiistem.cn|https://liiistem.cn>>>>>
+
+  <section*|需知>
+
+  <\itemize>
+    <item>题目由三鲤网络 <hlink|https://liiistem.cn/|> 和猴哥考研竞赛数学提供
+
+    <item>专属QQ答疑群: 1057579715
+
+    <item>购买Liii STEM<hlink|果实会员|https://liiistem.cn/pricing-fruit.html>可获取全部习题答案，定期（每两周）更新，并有专属答疑群和使用<hlink|Liii STEM内置AI工具答疑|https://liiistem.cn/docs/guide-tuto-llm-plug.html>。
+
+    <item>Yifan: 每两周上传十道例题,一道真题，标题写名字
+  </itemize>
+
+  <section|问题>
+
+  <\question>
+    (20251215437) 将 <math|<frac|1|<sqrt|1+x<rsup|x>>>> 在<math|x=0>处展开至第 5 项
+  </question>
+
+  <\question>
+    (20251211356) 如果 <math|A\<subset\>\<bbb-R\>> 是有界的，并且 <math|f:A\<to\>\<bbb-R\>> 是一致连续的，那么 <math|f<around|(|A|)>> 也是有界的。
+  </question>
+
+  <\question>
+    (2025181441) 设 <math|A> 是一个 <math|n> 阶实矩阵，证明：
+
+    <\equation*>
+      <around*|\||E+t*A|\|>=e<rsup|<big|sum><rsub|i=1><rsup|n><around|(|-1|)><rsup|n-i><math-up|tr><around|(|A<rsup|i>|)><frac|t<rsup|i>|i>>
+    </equation*>
+  </question>
+
+  <\question>
+    (202411274125) 设 <math|T:\<bbb-R\><around|[|x|]>\<to\>\<bbb-R\><around|[|x|]>> 是线性映射 <math|p<around|(|x|)>\<mapsto\><frac|d|d*x>*p<around|(|x|)>>。是否存在一个关于 <math|L<rsup|2><around|(|<around|[|0,1|]>|)>> 范数的多项式环 <math|\<bbb-R\><around|[|x|]>> 的标准正交基 <math|b<rsub|1>,b<rsub|2>,\<cdots\>>，使得元素 <math|T<around|(|b<rsub|1>|)>,T<around|(|b<rsub|2>|)>,\<cdots\>> 也是正交的？
+  </question>
+
+  <\question>
+    (2024627942) 设界函数 <math|F> 满足 <math|>
+
+    <\equation*>
+      F*<around|(|x-a|)>*e<rsup|a*x>+<around|(|1-F*<around|(|x+a|)>|)>*e<rsup|-a*x>=e<rsup|a<rsup|2>/2>
+    </equation*>
+
+    试求方程的通解。
+  </question>
+
+  <\question>
+    (20246271102) 找到一个非 <math|x<rsup|a>> 形式的函数 <math|f>，使得 <math|f<around|(|f<around|(|x|)>|)>=x>，其中 <math|f> 在定义域上连续。
+  </question>
+
+  <\question>
+    (202411191743) 设 <math|p<rsub|n><around|(|x|)>=a<rsub|m>*x<rsup|m>+a<rsub|m-1>*x<rsup|m-1>+\<cdots\>+a<rsub|1>*x+a<rsub|0>> （其中 <math|a<rsub|m>,\<cdots\>,a<rsub|1>,a<rsub|0>\<in\>\<bbb-R\>>）是一个多项式，并且
+
+    <\equation*>
+      p<rsub|n><around|(|x|)>=p<rsub|n-1><around|(|x|)>+p<rsub|n-1><rprime|'><around|(|x|)>,<space|1em>n=1,2,\<cdots\>
+    </equation*>
+
+    那么，存在 <math|N\<in\>\<bbb-N\>>，使得对于所有 <math|n\<geq\>N>，多项式 <math|p<rsub|n><around|(|x|)>> 的所有根都是实根。
+  </question>
+
+  <\question>
+    (202411271228) 我正在寻找一个函数 <math|f:\<bbb-R\>\<to\>\<bbb-R\>> 的例子，这个函数在所有地方都是连续的，但是有不可数多个根。我不希望是像对所有 <math|x>，<math|f=0> 这样的平凡例子。
+  </question>
+
+  <\question>
+    (202411191857) 如果 <math|<big|sum><rsub|n=0><rsup|\<infty\>>x<rsub|n>> 收敛，那么 <math|<big|sum><rsub|n=0><rsup|\<infty\>>f<around|(|x<rsub|n>|)>> 也收敛。我的问题是：除了 <math|f<around|(|0|)>=0> 之外，关于这样的函数在接近 0 时的行为，还能说些什么有趣的事情吗？
+  </question>
+
+  <\question>
+    (202411191858) 假设 <math|f:\<bbb-R\>\<to\>\<bbb-R\>> 是连续函数。是否可能 <math|f> 在其值域中的每个值都恰好被取到偶数次？
+  </question>
+</body>
+
+<\initial>
+  <\collection>
+    <associate|page-medium|paper>
+    <associate|page-screen-margin|false>
+  </collection>
+</initial>
+
+<\references>
+  <\collection>
+    <associate|auto-1|<tuple|?|?>>
+    <associate|auto-2|<tuple|1|?>>
+  </collection>
+</references>

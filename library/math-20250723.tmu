@@ -1,0 +1,130 @@
+<TMU|<tuple|1.1.0|2025.0.12>>
+
+<style|<tuple|generic|chinese|number-europe|number-long-article>>
+
+<\body>
+  <doc-data|<doc-title|20250723题目>|<doc-author|<author-data|<author-name|猴哥考研竞赛数学>|<author-homepage|<hlink|bilibili|https://space.bilibili.com/33047006>>>>|<doc-author|<author-data|<author-name|Liii Network>|<author-homepage|<hlink|https://liiistem.cn|https://liiistem.cn>>>>>
+
+  <section*|需知>
+
+  <\itemize>
+    <item>题目由三鲤网络和猴哥考研竞赛数学提供
+
+    <item>专属QQ答疑群: 1057579715
+
+    <item>购买Liii STEM<hlink|果实会员|https://liiistem.cn/pricing-fruit.html>可获取全部习题答案，定期（每两周）更新，并有专属答疑群和使用<hlink|Liii STEM内置AI工具答疑|https://liiistem.cn/docs/guide-tuto-llm-plug.html>。
+  </itemize>
+
+  <\question>
+    (20245271611) 设序列 <math|<around|{|a<rsub|n>|}><rsub|n\<in\>\<bbb-N\>>> 满足
+
+    <\enumerate>
+      <item><math|a<rsub|n>\<in\><around|[|0,1|]>,\<forall\>n\<in\>\<bbb-N\>>.\ 
+
+      <item><math|lim<rsub|n\<to\>+\<infty\>> a<rsub|n>=0>\ 
+
+      <item><math|lim<rsub|n\<to\>+\<infty\>> a<rsub|n+1>/a<rsub|n>=1>
+
+      <item><math|a<rsub|n+1>\<leq\>a<rsub|n>,\<forall\>n\<in\>\<bbb-N\>>\ 
+
+      <item><math|a<rsub|n+1>/a<rsub|n>\<geq\>a<rsub|n>/a<rsub|n-1>>
+    </enumerate>
+
+    证明或证伪 <math|<around|{|n*a<rsub|n>|}><rsub|n\<in\>\<bbb-N\>>> 是单调的.
+  </question>
+
+  <\question>
+    (202411241836) <math|<around|(|<frac|1|2>|)><rsup|<frac|1|3><rsup|<frac|1|4><rsup|\<udots\>>>>> 收敛吗？
+  </question>
+
+  <\question>
+    (2025 年 2 月 5 日刘神公众号) 设数列 <math|<around|{|c<rsub|n>|}>> 满足 <math|0\<less\>c<rsub|1>\<less\>4\<less\>c<rsub|2>,c<rsub|n+2>=<sqrt|c<rsub|n+1>>+<sqrt|c<rsub|n>>>，证明：
+
+    <\equation*>
+      lim<rsub|n\<to\>+\<infty\>> <sqrt|<around|\||c<rsub|n>-4|\|>>=<frac|<sqrt|17>+1|8>
+    </equation*>
+  </question>
+
+  <\question>
+    (20245271643) 设数列 <math|<around|{|\<lambda\><rsub|n>|}><rsub|n\<in\>\<bbb-N\>>> 为严格单调发散至 <math|+\<infty\>> 的正项序列，并且对 <math|\<forall\>m\<gtr\>0> 有
+
+    <\equation*>
+      a<rsub|k>=O<around*|(|\<lambda\><rsub|k><rsup|m>|)>
+    </equation*>
+
+    试问 <math|<big|sum><rsub|k=1><rsup|+\<infty\>>a<rsub|k>> 是否一定收敛？
+  </question>
+
+  <\question>
+    设数组 <math|<around|{|a<rsub|j>|}><rsub|1\<leqslant\>j\<leqslant\>n>\<subset\>\<bbb-R\><rsup|+>> 满足 <math|<big|prod><rsub|k=1><rsup|+\<infty\>>a<rsub|k>=1>，证明：
+
+    <\equation*>
+      <big|sum><rsub|k=1><rsup|n><sqrt|a<rsub|k>|k>\<geq\><around|(|n+1|)>/2.
+    </equation*>
+  </question>
+
+  <\question>
+    (2024529927) 试讨论下式的渐近性
+
+    <\equation*>
+      S<rsub|n>=<big|sum><rsub|k=1><rsup|n>log <around*|(|1-<frac|sin<rsup|2><around|(|x/<around|(|2*n+1|)>|)>|sin<rsup|2><around|(|k*x/<around|(|2*n+1|)>|)>>|)>
+    </equation*>
+
+    \;
+  </question>
+
+  <\question>
+    证明：若函数 <math|f<around|(|x|)>=O<around|(|x|)>>，则 <math|>
+
+    <\equation*>
+      <big|sum><rsub|n\<leqslant\>x>f*<around|(|x/n|)>=O<around|(|x*log x|)>
+    </equation*>
+  </question>
+
+  <\question>
+    （2024529933）若递增函数 <math|g<around|(|x|)>> 满足 <math|>
+
+    <\equation*>
+      <big|sum><rsub|n\<leq\>x>g*<around|(|x/n|)>\<sim\>x*log x
+    </equation*>
+
+    则 <math|g<around|(|x|)>=O<around|(|x|)>>.
+  </question>
+
+  <\question>
+    （20241120856）证明：
+
+    <\equation*>
+      <around*|(|<frac|3|1>|)><rsup|1/2><around*|(|<frac|7|5>|)><rsup|1/6><around*|(|<frac|11|9>|)><rsup|1/10><around*|(|<frac|15|13>|)><rsup|1/14>*\<cdots\>=e<rsup|<frac|\<pi\>|4><big|int><rsub|0><rsup|\<pi\>/4><frac|tan x|x>*d*x>.
+    </equation*>
+  </question>
+
+  \;
+
+  <\question>
+    (20251191049) 能否构造 <math|\<pm\><sqrt|1>\<pm\><sqrt|2>\<pm\><sqrt|3>\<pm\>\<cdots\>\<to\>0> ?
+  </question>
+
+  \;
+</body>
+
+<\initial>
+  <\collection>
+    <associate|page-medium|papyrus>
+    <associate|page-screen-margin|false>
+  </collection>
+</initial>
+
+<\references>
+  <\collection>
+    <associate|auto-1|<tuple|?|1>>
+  </collection>
+</references>
+
+<\auxiliary>
+  <\collection>
+    <\associate|toc>
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|需知> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-1><vspace|0.5fn>
+    </associate>
+  </collection>
+</auxiliary>

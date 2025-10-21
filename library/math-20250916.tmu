@@ -1,0 +1,119 @@
+<TMU|<tuple|1.1.0|2025.1.1-rc2>>
+
+<style|<tuple|generic|chinese|number-europe>>
+
+<\body>
+  <doc-data|<doc-title|20250916例题>|<doc-author|<author-data|<author-name|猴哥考研竞赛数学>|<author-homepage|<hlink|bilibili|https://space.bilibili.com/33047006>>>>|<doc-author|<author-data|<author-name|Liii Network>|<author-homepage|<hlink|https://liiistem.cn|https://liiistem.cn>>>>>
+
+  <section*|需知>
+
+  <\itemize>
+    <item>题目由三鲤网络 <hlink|https://liiistem.cn/|> 和猴哥考研竞赛数学提供
+
+    <item>专属QQ答疑群: 1057579715
+
+    <item>购买Liii STEM<hlink|果实会员|https://liiistem.cn/pricing-fruit.html>可获取全部习题答案，定期（每两周）更新，并有专属答疑群和使用<hlink|Liii STEM内置AI工具答疑|https://liiistem.cn/docs/guide-tuto-llm-plug.html>。
+
+    <item>Yifan: 每两周上传十道例题,一道真题，标题写名字
+  </itemize>
+
+  <section|问题>
+
+  <\question>
+    (202412131123) 求函数 <math|g:\<bbb-R\>\<to\>\<bbb-R\>>，使得对于所有的 <math|x> 满足：
+
+    <\equation*>
+      f<around|(|x|)>+f<around|(|g<around|(|x|)>|)>=x<rsup|2>
+    </equation*>
+  </question>
+
+  <\question>
+    (2025191502) 是否存在一个函数 <math|f:\<bbb-R\>\<to\>\<bbb-R\>>，它是严格递增的并且在每一点都不连续？
+  </question>
+
+  <\question>
+    (2025191503) 设 <math|f:\<bbb-R\>\<to\>\<bbb-R\>> 是一个二阶可导的函数，满足当 <math|x> 趋向于无穷大时 <math|f<around|(|x|)>> 趋向于 0，且 <math|f<rprime|''>> 是有界的。证明当 <math|x> 趋向于无穷大时 <math|f<rprime|'>> 趋向于 0.
+  </question>
+
+  <\question>
+    (2025191506) 对于函数 <math|f<around|(|x|)>=x*sin <frac|1|x>> （当 <math|x\<neq\>0> 时）和 <math|f<around|(|0|)>=0>
+
+    <\enumerate-alpha>
+      <item>为什么函数 <math|f> 在实数集 <math|\<bbb-R\>> 的任意有界子集上是一致连续的？
+
+      <item>函数 <math|f> 是否在整个实数集 <math|\<bbb-R\>> 上都是一致连续的？
+    </enumerate-alpha>
+  </question>
+
+  <\question>
+    (202411191739) 以下关于勒让德多项式的性质是否普遍成立。
+
+    <\enumerate>
+      <item>根是否总是单根（即，重数为 1）？
+
+      <item>除了低次情况外，根无法精确计算，只能近似（与切比雪夫多项式不同）。
+
+      <item>勒让德多项式的所有根在区间 <math|<around|[|0,1|]>> 上是否稠密（即，无法找到一个子区间，无论多小，其中不包含至少一个多项式的根）？
+    </enumerate>
+  </question>
+
+  <\question>
+    (202411191900) 设 <math|f:<around|(|0,\<infty\>|)>\<to\><around|(|0,\<infty\>|)>> 是一个有原函数的函数，并且满足关系 <math|f<around*|(|<frac|c<around|(|x|)>|x>|)>=f<around|(|x|)>>，<math|\<forall\>x\<in\><around|(|0,\<infty\>|)>>）证明 <math|f> 是连续的。
+  </question>
+
+  <\question>
+    (观佬 2025-2-3 提出)设正项序列 <math|<around|{|a<rsub|n>|}>> 满足 <math|a<rsub|n>\<geq\>r*<big|sum><rsub|k=1><rsup|n+2>a<rsub|k>>，求 <math|sup r>
+  </question>
+
+  <\question>
+    (202411271522) 是否存在一个序列 <math|<around|{|a<rsub|n>|}><rsub|n=1><rsup|\<infty\>>>，满足 <math|a<rsub|n>\<less\>a<rsub|n+1>+a<rsub|n<rsup|2>>>，使得 <math|<big|sum><rsub|n=1><rsup|\<infty\>>a<rsub|n>> 收敛？
+  </question>
+
+  <\question>
+    (202411191500) 证明：<math|>\ 
+
+    <\equation*>
+      <big|sum><rsub|n=1><rsup|\<infty\>><frac|<around|(|-1|)><rsup|n>|log n+sin n>
+    </equation*>
+
+    收敛。
+  </question>
+
+  <\question>
+    (20251291522)是否存在一个正的非减序列 <math|<around|{|a<rsub|n>|}>>，使得
+
+    <\equation*>
+      <big|sum><rsub|n=1><rsup|\<infty\>><frac|1|a<rsub|n>>=+\<infty\>
+    </equation*>
+
+    但
+
+    <\equation*>
+      <big|sum><rsub|n=1><rsup|\<infty\>><frac|1|n+a<rsub|n>>\<less\>\<infty\>.
+    </equation*>
+  </question>
+</body>
+
+<\initial>
+  <\collection>
+    <associate|page-medium|paper>
+    <associate|page-screen-margin|false>
+  </collection>
+</initial>
+
+<\references>
+  <\collection>
+    <associate|auto-1|<tuple|?|1>>
+    <associate|auto-2|<tuple|1|1>>
+  </collection>
+</references>
+
+<\auxiliary>
+  <\collection>
+    <\associate|toc>
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|需知> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-1><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>问题> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-2><vspace|0.5fn>
+    </associate>
+  </collection>
+</auxiliary>

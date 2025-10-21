@@ -1,0 +1,315 @@
+<TMU|<tuple|1.1.0|2025.0.11>>
+
+<style|<tuple|generic|chinese|number-europe|llm>>
+
+<\body>
+  <\question>
+    解方程
+
+    <\equation*>
+      x<rsup|4>+<frac|4a|a-1>x<rsup|3>+<frac|6a|a-1>x<rsup|2>+<frac|4a|a-1>x+1=0
+    </equation*>
+
+    <\answer*>
+      两侧同时除以<math|x<rsup|2>>，从而
+
+      <\equation*>
+        <around*|(|x<rsup|>+<frac|1|x<rsup|>>|)><rsup|2>+<frac|4a|a-1><around*|(|x+<frac|1|x>|)>+<frac|6a|a-1>-2=0
+      </equation*>
+
+      令<math|y=x+<frac|1|x>>
+
+      <\equation*>
+        y<rsup|2>+<frac|4a|a-1>y+<frac|6a|a-1>-2=0
+      </equation*>
+
+      解得
+
+      <\equation*>
+        y=-<frac|2a|a-1>\<pm\><frac|<sqrt|2<around*|(|a+1|)>>|a-1>
+      </equation*>
+
+      注意到<math|x<rsup|2>-x y+1=0>,解得
+
+      <\equation*>
+        x=<frac|y\<pm\><sqrt|y<rsup|2>-4>|2>
+      </equation*>
+    </answer*>
+  </question>
+
+  <\session|llm|DeepSeek-V3>
+    <\unfolded-io-text>
+      V3\<gtr\>\ 
+    <|unfolded-io-text>
+      解方程
+
+      <\equation*>
+        x<rsup|4>+<frac|4a|a-1>x<rsup|3>+<frac|6a|a-1>x<rsup|2>+<frac|4a|a-1>x+1=0
+      </equation*>
+    <|unfolded-io-text>
+      <subsubsection|第一步：观察方程的结构><label|ux7b2cux4e00ux6b65ux89c2ux5bdfux65b9ux7a0bux7684ux7ed3ux6784>
+
+      首先，我注意到这个四次方程的系数有一定的规律性：
+
+      <\equation*>
+        x<rsup|4>+<frac|4*a|a-1>*x<rsup|3>+<frac|6*a|a-1>*x<rsup|2>+<frac|4*a|a-1>*x+1=0
+      </equation*>
+
+      这个结构与二项式展开 <math|<around|(|x+1|)><rsup|4>=x<rsup|4>+4*x<rsup|3>+6*x<rsup|2>+4*x+1> 非常相似，只是系数被调整了。这提示我可能需要某种变形或替换来简化方程。
+
+      <subsubsection|第二步：尝试变量替换><label|ux7b2cux4e8cux6b65ux5c1dux8bd5ux53d8ux91cfux66ffux6362>
+
+      考虑到系数中的 <math|<frac|a|a-1>> 因子，我设：
+
+      <\equation*>
+        k=<frac|a|a-1>
+      </equation*>
+
+      那么方程可以重写为：
+
+      <\equation*>
+        x<rsup|4>+4*k*x<rsup|3>+6*k*x<rsup|2>+4*k*x+1=0
+      </equation*>
+
+      这看起来更简洁了。现在，我需要解这个关于 <math|x> 的四次方程。
+
+      <subsubsection|第三步：寻找对称性><label|ux7b2cux4e09ux6b65ux5bfbux627eux5bf9ux79f0ux6027>
+
+      观察方程：
+
+      <\equation*>
+        x<rsup|4>+4*k*x<rsup|3>+6*k*x<rsup|2>+4*k*x+1=0
+      </equation*>
+
+      我注意到这是一个对称多项式。为了利用对称性，我尝试除以 <math|x<rsup|2>>（假设 <math|x\<neq\>0>）：
+
+      <\equation*>
+        x<rsup|2>+<frac|1|x<rsup|2>>+4*k*<around*|(|x+<frac|1|x>|)>+6*k=0
+      </equation*>
+
+      设 <math|y=x+<frac|1|x>>，那么：
+
+      <\equation*>
+        x<rsup|2>+<frac|1|x<rsup|2>>=y<rsup|2>-2
+      </equation*>
+
+      因此，方程变为：
+
+      <\equation*>
+        y<rsup|2>-2+4*k*y+6*k=0
+      </equation*>
+
+      <\equation*>
+        y<rsup|2>+4*k*y+<around|(|6*k-2|)>=0
+      </equation*>
+
+      <subsubsection|第四步：解关于 <math|y> 的二次方程><label|ux7b2cux56dbux6b65ux89e3ux5173ux4e8e-y-ux7684ux4e8cux6b21ux65b9ux7a0b>
+
+      现在，解这个关于 <math|y> 的二次方程：
+
+      <\equation*>
+        y=<frac|-4*k\<pm\><sqrt|<around|(|4*k|)><rsup|2>-4\<cdot\>1\<cdot\><around|(|6*k-2|)>>|2>
+      </equation*>
+
+      <\equation*>
+        y=<frac|-4*k\<pm\><sqrt|16*k<rsup|2>-24*k+8>|2>
+      </equation*>
+
+      <\equation*>
+        y=<frac|-4*k\<pm\><sqrt|16*k<rsup|2>-24*k+8>|2>
+      </equation*>
+
+      <\equation*>
+        y=-2*k\<pm\><sqrt|4*k<rsup|2>-6*k+2>
+      </equation*>
+
+      <subsubsection|第五步：回到 <math|x> 的方程><label|ux7b2cux4e94ux6b65ux56deux5230-x-ux7684ux65b9ux7a0b>
+
+      由于 <math|y=x+<frac|1|x>>，我们有两个方程：
+
+      <\enumerate>
+        <assign|labelenumi|<macro|<number|<enumi-nr>|arabic>.>>
+
+        <item><math|x+<frac|1|x>=-2*k+<sqrt|4*k<rsup|2>-6*k+2>>
+
+        <item><math|x+<frac|1|x>=-2*k-<sqrt|4*k<rsup|2>-6*k+2>>
+      </enumerate>
+
+      将这两个方程转化为标准的二次方程形式：
+
+      <\enumerate>
+        <assign|labelenumi|<macro|<number|<enumi-nr>|arabic>.>>
+
+        <item><math|x<rsup|2>-<around|(|-2*k+<sqrt|4*k<rsup|2>-6*k+2>|)>*x+1=0>
+
+        <item><math|x<rsup|2>-<around|(|-2*k-<sqrt|4*k<rsup|2>-6*k+2>|)>*x+1=0>
+      </enumerate>
+
+      <subsubsection|第六步：解最终的二次方程><label|ux7b2cux516dux6b65ux89e3ux6700ux7ec8ux7684ux4e8cux6b21ux65b9ux7a0b>
+
+      对于第一个方程：
+
+      <\equation*>
+        x=<frac|2*k-<sqrt|4*k<rsup|2>-6*k+2>\<pm\><sqrt|<around|(|-2*k+<sqrt|4*k<rsup|2>-6*k+2>|)><rsup|2>-4>|2>
+      </equation*>
+
+      对于第二个方程：
+
+      <\equation*>
+        x=<frac|2*k+<sqrt|4*k<rsup|2>-6*k+2>\<pm\><sqrt|<around|(|-2*k-<sqrt|4*k<rsup|2>-6*k+2>|)><rsup|2>-4>|2>
+      </equation*>
+
+      <subsubsection|第七步：简化表达式><label|ux7b2cux4e03ux6b65ux7b80ux5316ux8868ux8fbeux5f0f>
+
+      为了简化，我们可以将解表示为：
+
+      <\equation*>
+        x=<frac|2*k\<mp\><sqrt|4*k<rsup|2>-6*k+2>\<pm\><sqrt|<around|(|-2*k\<pm\><sqrt|4*k<rsup|2>-6*k+2>|)><rsup|2>-4>|2>
+      </equation*>
+
+      不过，这种形式仍然较为复杂。因此，更简洁的表达方式是保留之前的步骤，即先解 <math|y> 的方程，再解 <math|x> 的方程。
+
+      <subsubsection|第八步：还原 <math|k> 为 <math|a>><label|ux7b2cux516bux6b65ux8fd8ux539f-k-ux4e3a-a>
+
+      记得我们设 <math|k=<frac|a|a-1>>，因此：
+
+      <\equation*>
+        y=-2<around*|(|<frac|a|a-1>|)>\<pm\><sqrt|4<around*|(|<frac|a|a-1>|)><rsup|2>-6<around*|(|<frac|a|a-1>|)>+2>
+      </equation*>
+
+      计算判别式：
+
+      <\equation*>
+        4*k<rsup|2>-6*k+2=4<around*|(|<frac|a|a-1>|)><rsup|2>-6<around*|(|<frac|a|a-1>|)>+2
+      </equation*>
+
+      <\equation*>
+        =<frac|4*a<rsup|2>|<around|(|a-1|)><rsup|2>>-<frac|6*a|a-1>+2
+      </equation*>
+
+      <\equation*>
+        =<frac|4*a<rsup|2>-6*a*<around|(|a-1|)>+2*<around|(|a-1|)><rsup|2>|<around|(|a-1|)><rsup|2>>
+      </equation*>
+
+      <\equation*>
+        =<frac|4*a<rsup|2>-6*a<rsup|2>+6*a+2*a<rsup|2>-4*a+2|<around|(|a-1|)><rsup|2>>
+      </equation*>
+
+      <\equation*>
+        =<frac|<around|(|4*a<rsup|2>-6*a<rsup|2>+2*a<rsup|2>|)>+<around|(|6*a-4*a|)>+2|<around|(|a-1|)><rsup|2>>
+      </equation*>
+
+      <\equation*>
+        =<frac|0+2*a+2|<around|(|a-1|)><rsup|2>>
+      </equation*>
+
+      <\equation*>
+        =<frac|2*<around|(|a+1|)>|<around|(|a-1|)><rsup|2>>
+      </equation*>
+
+      因此：
+
+      <\equation*>
+        <sqrt|4*k<rsup|2>-6*k+2>=<sqrt|<frac|2*<around|(|a+1|)>|<around|(|a-1|)><rsup|2>>>=<frac|<sqrt|2*<around|(|a+1|)>>|a-1>
+      </equation*>
+
+      所以：
+
+      <\equation*>
+        y=-2<around*|(|<frac|a|a-1>|)>\<pm\><frac|<sqrt|2*<around|(|a+1|)>>|a-1>
+      </equation*>
+
+      <\equation*>
+        y=<frac|-2*a\<pm\><sqrt|2*<around|(|a+1|)>>|a-1>
+      </equation*>
+
+      这与之前的结果一致。
+
+      <subsubsection|第九步：总结解的形式><label|ux7b2cux4e5dux6b65ux603bux7ed3ux89e3ux7684ux5f62ux5f0f>
+
+      综上所述，原方程的解可以通过以下步骤得到：
+
+      <\enumerate>
+        <assign|labelenumi|<macro|<number|<enumi-nr>|arabic>.>>
+
+        <item>计算 <math|y> 的值：
+
+        <\equation*>
+          y<rsub|1,2>=<frac|-2*a\<pm\><sqrt|2*<around|(|a+1|)>>|a-1>
+        </equation*>
+
+        <item>对于每一个 <math|y> 值，解对应的二次方程：
+
+        <\equation*>
+          x<rsup|2>-y*x+1=0
+        </equation*>
+      </enumerate>
+
+      因此，最终的四个解可以表示为：
+
+      <\equation*>
+        x=<frac|y\<pm\><sqrt|y<rsup|2>-4>|2>
+      </equation*>
+
+      其中 <math|y> 取上述的两个值。
+
+      <subsubsection|最终答案><label|ux6700ux7ec8ux7b54ux6848>
+
+      综上所述，方程的解为：
+
+      对于 <math|y=<frac|-2*a\<pm\><sqrt|2*<around|(|a+1|)>>|a-1>>，解 <math|x<rsup|2>-y*x+1=0> 得到：
+
+      <\equation*>
+        <boxed|x=<frac|<frac|-2*a+<sqrt|2*<around|(|a+1|)>>|a-1>\<pm\><sqrt|<around*|(|<frac|-2*a+<sqrt|2*<around|(|a+1|)>>|a-1>|)><rsup|2>-4>|2>>
+      </equation*>
+
+      和
+
+      <\equation*>
+        <boxed|x=<frac|<frac|-2*a-<sqrt|2*<around|(|a+1|)>>|a-1>\<pm\><sqrt|<around*|(|<frac|-2*a-<sqrt|2*<around|(|a+1|)>>|a-1>|)><rsup|2>-4>|2>>
+      </equation*>
+
+      或者更简洁地表示为：
+
+      对于 <math|y=<frac|-2*a\<pm\><sqrt|2*<around|(|a+1|)>>|a-1>>，解 <math|x<rsup|2>-y*x+1=0> 得到：
+
+      <\equation*>
+        x=<frac|y\<pm\><sqrt|y<rsup|2>-4>|2>
+      </equation*>
+
+      这样，我们得到了原四次方程的所有四个解。
+    </unfolded-io-text>
+  </session>
+</body>
+
+<\initial>
+  <\collection>
+    <associate|page-medium|paper>
+    <associate|page-screen-margin|false>
+  </collection>
+</initial>
+
+<\references>
+  <\collection>
+    <associate|auto-1|<tuple|1|?>>
+    <associate|auto-10|<tuple|10|?>>
+    <associate|auto-2|<tuple|2|?>>
+    <associate|auto-3|<tuple|3|?>>
+    <associate|auto-4|<tuple|4|?>>
+    <associate|auto-5|<tuple|5|?>>
+    <associate|auto-6|<tuple|6|?>>
+    <associate|auto-7|<tuple|7|?>>
+    <associate|auto-8|<tuple|8|?>>
+    <associate|auto-9|<tuple|9|?>>
+    <associate|ux6700ux7ec8ux7b54ux6848|<tuple|10|?>>
+    <associate|ux7b2cux4e00ux6b65ux89c2ux5bdfux65b9ux7a0bux7684ux7ed3ux6784|<tuple|1|?>>
+    <associate|ux7b2cux4e03ux6b65ux7b80ux5316ux8868ux8fbeux5f0f|<tuple|7|?>>
+    <associate|ux7b2cux4e09ux6b65ux5bfbux627eux5bf9ux79f0ux6027|<tuple|3|?>>
+    <associate|ux7b2cux4e5dux6b65ux603bux7ed3ux89e3ux7684ux5f62ux5f0f|<tuple|9|?>>
+    <associate|ux7b2cux4e8cux6b65ux5c1dux8bd5ux53d8ux91cfux66ffux6362|<tuple|2|?>>
+    <associate|ux7b2cux4e94ux6b65ux56deux5230-x-ux7684ux65b9ux7a0b|<tuple|5|?>>
+    <associate|ux7b2cux516bux6b65ux8fd8ux539f-k-ux4e3a-a|<tuple|8|?>>
+    <associate|ux7b2cux516dux6b65ux89e3ux6700ux7ec8ux7684ux4e8cux6b21ux65b9ux7a0b|<tuple|6|?>>
+    <associate|ux7b2cux56dbux6b65ux89e3ux5173ux4e8e-y-ux7684ux4e8cux6b21ux65b9ux7a0b|<tuple|4|?>>
+  </collection>
+</references>

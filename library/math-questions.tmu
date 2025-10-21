@@ -1,0 +1,108 @@
+<TMU|<tuple|1.1.0|2025.1.0-rc3>>
+
+<style|<tuple|generic|number-europe|british|preview-ref|smart-ref|number-long-article>>
+
+<\body>
+  <\hide-preamble>
+    \;
+
+    <assign|definition|<\macro|body>
+      <\inactive*>
+        <with|ornament-hpadding|4spc|ornament-vpadding|3spc|ornament-shadow-color|#258c62|ornament-sunny-color|#258c62|ornament-color|#eff6f2|<\ornamented>
+          <surround|<compound|next-definition>||<compound|render-remark|<compound|definition-numbered|<compound|definition-text>|<compound|the-definition>>|<arg|body>>>
+        </ornamented>>
+      </inactive*>
+    </macro>>
+
+    <assign|theorem|<\macro|body>
+      <with|ornament-hpadding|4spc|ornament-vpadding|3spc|ornament-shadow-color|#5f4688|ornament-sunny-color|#5f4688|ornament-color|#eeeaf4|<\ornamented>
+        <surround|<compound|next-theorem>||<compound|render-theorem|<compound|theorem-numbered|<compound|theorem-text>|<compound|the-theorem>>|<arg|body>>>
+      </ornamented>>
+    </macro>>
+  </hide-preamble>
+
+  <doc-data|<doc-title|doc title>|<doc-author|<author-data|<author-name|author>>>|<doc-date|2025.8.13>>
+
+  <section|Number-theoretic foundations>
+
+  <\definition>
+    Let <math|a,b\<in\>\<bbb-Z\>> with <math|a\<neq\>0>. If there exists an integer <math|q\<in\>\<bbb-Z\>> such that <math|b=a<rsub|>q>, then we say that <with|font-series|bold|b is divisible by a> (or <with|font-series|bold|a dicides b>), and we write <math|a\|b>; otherwise we write <math|a\<nmid\>b>.
+  </definition>
+
+  The integers possess the following properties:
+
+  <\equation>
+    a\|b\<Longleftrightarrow\>-a\|b\<Longleftrightarrow\>a\|-b\<Longleftrightarrow\><around*|\||a|\|><around*|\||b|\|>
+  </equation>
+
+  <\equation>
+    a<around*|\||b\<wedge\>b|\|>c\<Longrightarrow\>a\|c
+  </equation>
+
+  <\equation>
+    a<around*|\||b\<wedge\>a|\|>c\<Longleftrightarrow\>\<forall\>x,y\<in\>\<bbb-Z\>,a\|<around*|(|x<rsub|>b+y<rsub|>c|)>
+  </equation>
+
+  <\equation>
+    a<around*|\||b\<wedge\>b|\|>a\<Longrightarrow\>b=\<pm\>a
+  </equation>
+
+  <\equation>
+    Let m\<neq\>0,then a\|b\<Longleftrightarrow\>m<rsub|>a\|m<rsub|>b.
+  </equation>
+
+  <\equation>
+    Let b\<neq\>0,then a\|b\<Longrightarrow\><around*|\||a|\|>\<leq\><around*|\||b|\|>.
+  </equation>
+
+  <\equation>
+    Let a\<neq\>0,b=q<rsub|>a+c,then a\|\<Longleftrightarrow\>a\|c.
+  </equation>
+
+  <\theorem>
+    If <math|1\<less\>p\<less\>\<infty\>> and <math|m\<gtr\>n/p>, or <math|p=1> and <math|m\<geq\>n>, there exist a constant <math|C=C<around*|(|m,n,\<tau\>,p|)>>,such that
+
+    <\equation*>
+      <around*|\<\|\|\>|R<rsup|m>u|\<\|\|\>><rsub|L<rsup|\<infty\>><around*|(|\<Omega\>|)>>\<leq\>C d<rsup|m-n/p><around*|\||u|\|>W<rsup|m><rsub|p><around*|(|\<Omega\>|)>
+    </equation*>
+
+    for all <math|u\<in\>W<rsup|m><rsub|p><around*|(|\<Omega\>|)>>.
+  </theorem>
+
+  <\proof>
+    First, we assume that <math|u\<in\>C<rsup|m><around*|(|\<Omega\>|)>\<cap\>W<rsub|p><rsup|m><around*|(|\<Omega\>|)>.> We can use the pointwise representation of <math|R<rsup|m>u<around*|(|x|)>>.
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|<around*|\||R<rsup|m>u<around*|(|x|)>|\|>>|<cell|=>|<cell|m<around*|\||<big|sum><rsub|<around*|\||\<alpha\>|\|>=m><big|int><rsub|C<rsub|x>>k<rsub|\<alpha\>><around*|(|x,z|)>D<rsup|\<alpha\>>u<around*|(|z|)>\<mathd\>z|\|>>>|<row|<cell|>|<cell|\<leq\>>|<cell|C<big|sum><rsub|<around*|\||\<alpha\>|\|>=m><big|int><rsub|\<Omega\>><around*|\||x-z|\|><rsup|-n+m><around*|\||D<rsup|\<alpha\>>u<around*|(|z|)>|\|>\<mathd\>z>>|<row|<cell|>|<cell|\<leq\>>|<cell|C<rprime|'>d<rsup|m-n/p><around*|\||u|\|><rsub|W<rsup|m><rsub|p><around*|(|\<Omega\>|)>>.>>>>
+    </eqnarray*>
+
+    The proof can be completed via a density argument.
+
+    \;
+  </proof>
+
+  \;
+</body>
+
+<\initial>
+  <\collection>
+    <associate|page-medium|paper>
+    <associate|page-screen-margin|false>
+    <associate|par-columns|1>
+    <associate|preamble|false>
+  </collection>
+</initial>
+
+<\references>
+  <\collection>
+    <associate|auto-1|<tuple|1|1>>
+  </collection>
+</references>
+
+<\auxiliary>
+  <\collection>
+    <\associate|toc>
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Number-theoretic foundations> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-1><vspace|0.5fn>
+    </associate>
+  </collection>
+</auxiliary>

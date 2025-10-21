@@ -1,0 +1,176 @@
+<TMU|<tuple|1.1.0|2025.0.11>>
+
+<style|<tuple|generic|number-europe|llm>>
+
+<\body>
+  \;
+
+  <doc-data|<doc-title|Tutorial on Liii STEM>|<doc-author|<author-data|<author-name|Jack Yansong Li>|<\author-affiliation>
+    Liii Network
+  </author-affiliation>|<\author-email>
+    yansong@liii.pro
+  </author-email>>>>
+
+  <abstract-data|<abstract|Abstract here>>
+
+  <\table-of-contents|toc>
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|1<space|2spc>Introduction> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-1><vspace|0.5fn>
+
+    <with|par-left|1tab|1.1<space|2spc>Related works <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-2>>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|2<space|2spc>Mathematical background> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-3><vspace|0.5fn>
+
+    <with|par-left|2tab|2.0.1<space|2spc>Proof by Cantor's Diagonal Argument <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-4>>
+
+    <with|par-left|2tab|2.0.2<space|2spc>Key Idea <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-5>>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|Bibliography> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-6><vspace|0.5fn>
+  </table-of-contents>
+
+  <section|Introduction>
+
+  <subsection|Related works>
+
+  Li et al. <cite|li_solving_2023>
+
+  <section|Mathematical background>
+
+  <\theorem>
+    The set of real number is uncountable
+  </theorem>
+
+  <\proof>
+    \;
+
+    <\session|llm|DeepSeek-V3>
+      <\output>
+        LLM session v20250629 by LiiiLabs
+
+        Using deepseek-chat provided by deepseek.com with max_tokens 4096
+
+        Help docs：Help-\<gtr\>Plugins-\<gtr\>LLM
+      </output>
+
+      <\unfolded-io-text>
+        V3\<gtr\>\ 
+      <|unfolded-io-text>
+        <\theorem>
+          The set of real number <math|\<bbb-R\>> is uncountable
+        </theorem>
+
+        prove it
+      <|unfolded-io-text>
+        To prove that the set of real numbers <math|\<bbb-R\>> is uncountable, we can use <with|font-series|bold|Cantor's diagonal argument>. Here's a step-by-step proof:
+
+        <subsubsection|Proof by Cantor's Diagonal Argument><label|proof-by-cantors-diagonal-argument>
+
+        <\enumerate>
+          <assign|labelenumi|<macro|<number|<enumi-nr>|arabic>.>>
+
+          <item><with|font-series|bold|Assume for contradiction> that <math|\<bbb-R\>> is countable. Then, the interval <math|<around|(|0,1|)>\<subset\>\<bbb-R\>> must also be countable (since any subset of a countable set is countable).
+
+          <item>If <math|<around|(|0,1|)>> is countable, we can list all its elements as an infinite sequence:
+
+          <\equation*>
+            x<rsub|1>,x<rsub|2>,x<rsub|3>,\<ldots\>
+          </equation*>
+
+          where each <math|x<rsub|i>> is a real number in <math|<around|(|0,1|)>>.
+
+          <item>Represent each <math|x<rsub|i>> as an infinite decimal expansion (without trailing 9's to ensure uniqueness):
+
+          <\equation*>
+            <\align*>
+              <tformat|<table|<row|<cell|x<rsub|1>>|<cell|=0.*a<rsub|11>*a<rsub|12>*a<rsub|13>*\<ldots\>>>|<row|<cell|x<rsub|2>>|<cell|=0.*a<rsub|21>*a<rsub|22>*a<rsub|23>*\<ldots\>>>|<row|<cell|x<rsub|3>>|<cell|=0.*a<rsub|31>*a<rsub|32>*a<rsub|33>*\<ldots\>>>|<row|<cell|>|<cell|\<vdots\>>>>>
+            </align*>
+          </equation*>
+
+          where each <math|a<rsub|i*j>\<in\><around|{|0,1,2,\<ldots\>,9|}>>.
+
+          <item><with|font-series|bold|Construct a new number <math|y=0.*b<rsub|1>*b<rsub|2>*b<rsub|3>*\<ldots\>>> where:
+
+          <\equation*>
+            b<rsub|i>=<choice|<tformat|<table|<row|<cell|1>|<cell|<text|if >a<rsub|i*i>\<neq\>1,>>|<row|<cell|2>|<cell|<text|if >a<rsub|i*i>=1.>>>>>
+          </equation*>
+
+          This ensures that <math|y> differs from each <math|x<rsub|i>> in at least the <math|i>-th decimal place.
+
+          <item><with|font-series|bold|Observe that:>
+
+          <\itemize>
+            <item><math|y\<in\><around|(|0,1|)>> since its decimal expansion is valid.
+
+            <item><math|y\<neq\>x<rsub|i>> for any <math|i> because <math|b<rsub|i>\<neq\>a<rsub|i*i>>.
+          </itemize>
+
+          <item><with|font-series|bold|Contradiction:> We assumed that the list <math|<around|{|x<rsub|1>,x<rsub|2>,x<rsub|3>,\<ldots\>|}>> contains all real numbers in <math|<around|(|0,1|)>>, but <math|y> is a real number in <math|<around|(|0,1|)>> not in the list. This contradicts our assumption that <math|<around|(|0,1|)>> is countable.
+
+          <item><with|font-series|bold|Conclusion:> Since <math|<around|(|0,1|)>> is uncountable, <math|\<bbb-R\>> must also be uncountable (because <math|<around|(|0,1|)>> is a subset of <math|\<bbb-R\>> and uncountability is preserved under supersets).
+        </enumerate>
+
+        <\equation*>
+          <boxed|<text|The set of real numbers >\<bbb-R\><text|is uncountable.>>
+        </equation*>
+
+        <subsubsection|Key Idea><label|key-idea>
+
+        Cantor's diagonal argument constructs a number not in the assumed countable list, proving that no such complete list can exist. Hence, <math|\<bbb-R\>> cannot be put into a one-to-one correspondence with <math|\<bbb-N\>>, making it uncountable.
+      </unfolded-io-text>
+
+      <\input-text>
+        V3\<gtr\>\ 
+      <|input-text>
+        \;
+      </input-text>
+    </session>
+  </proof>
+
+  <\bibliography|bib|tm-plain|mybib>
+    <\bib-list|1>
+      <bibitem*|1><label|bib-li_solving_2023>Yansong Li<localize| and >Shuo Han. <newblock>Solving strongly convex and smooth stackelberg games without modeling the follower. <newblock><localize|In ><with|font-shape|italic|American Control Conference, ACC 2023, San Diego, CA, USA, May 31 - June 2, 2023>, <localize|pages >2332-2337. IEEE, 2023.<newblock>
+    </bib-list>
+  </bibliography>
+</body>
+
+<\initial>
+  <\collection>
+    <associate|page-medium|paper>
+    <associate|page-screen-margin|false>
+    <associate|par-columns|1>
+  </collection>
+</initial>
+
+<\references>
+  <\collection>
+    <associate|auto-1|<tuple|1|1>>
+    <associate|auto-2|<tuple|1.1|1>>
+    <associate|auto-3|<tuple|2|1>>
+    <associate|auto-4|<tuple|2.0.1|1>>
+    <associate|auto-5|<tuple|2.0.2|2>>
+    <associate|auto-6|<tuple|2.0.2|2>>
+    <associate|bib-li_solving_2023|<tuple|1|2>>
+    <associate|key-idea|<tuple|2.0.2|2>>
+    <associate|proof-by-cantors-diagonal-argument|<tuple|2.0.1|1>>
+  </collection>
+</references>
+
+<\auxiliary>
+  <\collection>
+    <\associate|bib>
+      li_solving_2023
+    </associate>
+    <\associate|toc>
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Introduction> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-1><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|1.1<space|2spc>Related works <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-2>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc>Mathematical background> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-3><vspace|0.5fn>
+
+      <with|par-left|<quote|2tab>|2.0.1<space|2spc>Proof by Cantor's Diagonal Argument <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-4>>
+
+      <with|par-left|<quote|2tab>|2.0.2<space|2spc>Key Idea <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-5>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Bibliography> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-6><vspace|0.5fn>
+    </associate>
+  </collection>
+</auxiliary>
